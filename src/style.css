@@ -152,10 +152,22 @@
 */
 
 .earth-planet {
-    animation: earth-hover 5s infinite;
+    animation: planet-float 5s infinite;
 }
 
-@keyframes earth-hover {
+.moon-planet {
+    animation: planet-float 7s infinite;
+}
+
+.mars-planet {
+    animation: planet-float 3s infinite;
+}
+
+.saturn-planet {
+    animation: planet-float 10s infinite;
+}
+
+@keyframes planet-float {
     0% {
         transform: translateY(0);
     }
@@ -166,5 +178,66 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+
+.space-text {
+    background-image: url('/src/img/space-text.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: space-text-switcher 8s infinite;
+}
+
+@keyframes space-text-switcher {
+    0% {
+        background-image: url('/src/img/space/space-text.png');
+    }
+
+    30% {
+        background-image: url('/src/img/space/space-text-off.png');
+    }
+
+    40% {
+        background-image: url('/src/img/space/space-text.png');
+    }
+
+    80% {
+        background-image: url('/src/img/space/space-text-off.png');
+    }
+
+    82% {
+        background-image: url('/src/img/space/space-text.png');
+    }
+
+    84% {
+        background-image: url('/src/img/space/space-text-off.png');
+    }
+
+    86% {
+        background-image: url('/src/img/space/space-text.png');
+    }
+
+    88% {
+        background-image: url('/src/img/space/space-text-off.png');
+    }
+
+    90% {
+        background-image: url('/src/img/space/space-text.png');
+    }
+}
+
+.spaceship {
+    animation: spaceship-mover 12s infinite;
+}
+
+@keyframes spaceship-mover {
+    from {
+        transform: translateX(-1200px);
+    }
+
+    to {
+        transform: translateX(1200px);
     }
 }
