@@ -182,7 +182,7 @@
 }
 
 .space-text {
-    background-image: url('/src/img/space-text.png');
+    background-image: url('/src/img/space/space-text.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
