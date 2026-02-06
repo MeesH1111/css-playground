@@ -230,6 +230,7 @@
 
 .spaceship {
     animation: spaceship-mover 12s infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes spaceship-mover {
@@ -239,5 +240,48 @@
 
     to {
         transform: translateX(1200px);
+    }
+}
+
+/*
+########################################################################################################################
+    KIRBY SECTION
+########################################################################################################################
+*/
+
+.kirby-running {
+    background-image: url('/src/img/kirby/kirby-yoyo.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: kirby-runner 12s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes kirby-runner {
+    0% {
+        background-image: url('/src/img/kirby/kirby-yoyo.gif');
+        transform: translateX(-40px);
+    }
+
+    20% {
+        background-image: url('/src/img/kirby/kirby-sword.gif');
+    }
+
+    40% {
+        background-image: url('/src/img/kirby/kirby-wing.gif');
+    }
+
+    60% {
+        background-image: url('/src/img/kirby/kirby-bomb.gif');
+    }
+
+    80% {
+        background-image: url('/src/img/kirby/kirby-cutter.gif');
+    }
+
+    100% {
+        transform: translateX(2000px);
     }
 }
