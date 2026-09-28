@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap');
 @import "tailwindcss";
 
+@theme {
+    --font-serif: 'Coustard', Lavigne, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-serif-heading: 'Coustard', Lavigne, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
 
 /* 
 ########################################################################################################################
@@ -284,4 +289,19 @@
     100% {
         transform: translateX(2000px);
     }
+}
+
+/*
+########################################################################################################################
+    LIL DARKIE SECTION
+########################################################################################################################
+*/
+
+.martian-mono-navtext {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
